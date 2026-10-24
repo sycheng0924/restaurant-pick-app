@@ -1,0 +1,89 @@
+:root {
+  --band: #0e5c4d;
+  --frame: rgba(241, 245, 243, 0.7);
+  --ink: #1a2421;
+  --muted: #5d6b66;
+  --mist: #f1f5f3;
+  --paper: #ffffff;
+  --line: #dce4e1;
+  --link: #0e5c4d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --band: #0a4a3e;
+    --ink: #e6eeeb;
+    --muted: #9aa9a4;
+    --mist: #0d1614;
+    --paper: #16211e;
+    --line: #26332f;
+    --link: #5bc0a4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --band: #0a4a3e;
+  --ink: #e6eeeb;
+  --muted: #9aa9a4;
+  --mist: #0d1614;
+  --paper: #16211e;
+  --line: #26332f;
+  --link: #5bc0a4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font: 17px/1.6 "Instrument Sans", system-ui, sans-serif;
+}
+.band {
+  background: var(--band);
+  color: #fff;
+  padding: 40px 16px 48px;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.brand img { width: 64px; height: 64px; border-radius: 15px; }
+/* The app's title signboard: an inset frame around the name. */
+.brand span {
+  font: 700 32px/1 "Big Shoulders Display", system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  border: 3px solid var(--frame);
+  border-radius: 10px;
+  padding: 6px 14px 7px;
+}
+.band p { margin: 20px 0 0; max-width: 34em; opacity: 0.92; }
+main { padding: 8px 16px 64px; }
+h1, h2 {
+  font-family: "Big Shoulders Display", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+h1 { font-size: 38px; margin: 40px 0 8px; }
+h2 { font-size: 25px; margin: 36px 0 8px; }
+p, li { max-width: 38em; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; border-radius: 4px; }
+.contact {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin-top: 32px;
+}
+.contact h2 { margin-top: 0; }
+.meta { color: var(--muted); }
+footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 16px 40px;
+  color: var(--muted);
+  font-size: 15px;
+}

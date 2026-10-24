@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Pick privacy policy</title>
+  <meta name="description" content="What Restaurant Pick sends to find restaurants near you, and what it doesn't keep.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <img src="icon-180.png" alt="">
+        <span>Restaurant Pick</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective 24 October 2026. Applies to the Restaurant Pick app for iPhone and Android.</p>
+
+    <p>In short: to find restaurants, the app sends the place you're searching from to our server, which asks Google Maps. Nothing is linked to who you are. There are no accounts, no analytics, no advertising and no tracking, and your searches aren't stored.</p>
+
+    <h2>When you search</h2>
+    <p>The app sends our server the coordinates of the search point (your phone's position, or the centre of the area you chose), the cuisines and distance you picked, and the app's language. Our server is a Cloudflare Worker run by the developer. It passes the coordinates and search to the <a href="https://developers.google.com/maps/documentation/places/web-service">Google Places API</a> and returns the results to your phone. It doesn't store your location or your searches.</p>
+    <p>The app asks for your location only while you use it, and only to search near you. If you don't allow it, you can still choose a Hong Kong area to search from.</p>
+
+    <h2>When you open a restaurant</h2>
+    <p>Our server fetches that restaurant's reviews and opening hours from Google Places, and sends the restaurant's name and address to <a href="https://ai.google.dev/">Google Gemini</a> for the short "Known for" note. Nothing about you is included. The note is kept on our server for up to 7 days per restaurant, so the next person who opens it doesn't need a new request. Gemini is used under Google's free terms, which allow Google to use these requests to improve its products; they contain only the restaurant's name and address.</p>
+
+    <h2>Daily limits and the app ID</h2>
+    <p>The first time it runs, the app creates a random ID. It isn't linked to your name, your Apple or Google account, or your device's advertising identifier. The app sends it with each request so our server can count searches per phone (20 a day) and keep the app within Google's free allowance. The counts are deleted automatically after 2 days.</p>
+
+    <h2>What stays on your phone</h2>
+    <p>Your filters, your language choice and the random ID, in the app's own storage. Search results are kept in memory only while the app is open. Delete the app to remove everything it stored.</p>
+
+    <h2>Other services</h2>
+    <p>Places, ratings, reviews and hours come from Google Maps, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://maps.google.com/help/terms_maps/">Google Maps terms</a>. Tapping a map button opens that map app (Apple Maps, Google Maps, Amap or Baidu Maps) with the restaurant's location; tapping a phone number or website opens your phone or browser. Those apps and sites have their own privacy policies. As with any internet request, Cloudflare and Google can see your device's IP address.</p>
+
+    <h2>What we collect</h2>
+    <p>We don't collect personal data. We don't sell or share anything, and the app contains no third-party analytics or advertising code.</p>
+
+    <h2>Children</h2>
+    <p>The app isn't directed at children and collects no personal data from anyone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:sy@sycheng.com?subject=Restaurant%20Pick%20privacy">sy@sycheng.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="./">Help and contact</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Pick support</title>
+  <meta name="description" content="Help and contact for Restaurant Pick, the app that picks 5 well-rated restaurants near you.">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <img src="icon-180.png" alt="">
+        <span>Restaurant Pick</span>
+      </a>
+      <p>Picks 5 well-rated restaurants near you, or near a Hong Kong area you choose, and opens walking directions in your map app.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="contact">
+      <h2>Get help</h2>
+      <p>Email <a href="mailto:sy@sycheng.com?subject=Restaurant%20Pick">sy@sycheng.com</a>. Say which phone you use, where you searched and what happened, and include a screenshot if you can.</p>
+    </section>
+
+    <h1>Questions</h1>
+
+    <h2>How are the 5 picks chosen?</h2>
+    <p>Restaurant Pick finds restaurants on Google Maps within the distance you choose, removes any that don't match your filters, and ranks the rest. The ranking is mostly the Google rating, weighted by the number of reviews, so a 4.5 from 2,000 reviews comes ahead of a 4.8 from 12. Nearer places get a small boost, and a tiny random factor reorders places that are almost tied. "Show 5 more" continues down the same list.</p>
+
+    <h2>Why does it say I've reached today's limit?</h2>
+    <p>The app is free and uses Google's free allowance, so each phone can search 20 times a day, and the app as a whole has a daily limit too. Limits reset at midnight Hong Kong time. Repeating a search from the same place, or changing only price, rating, number of reviews or open now, reuses the last results and doesn't count again.</p>
+
+    <h2>Location isn't working</h2>
+    <p>Check that Location Services are on and that Restaurant Pick is allowed to use your location (Settings → Privacy &amp; Security → Location Services on iPhone). You can also tap <b>Change area</b> and choose a Hong Kong area instead. Tap <b>Update location</b> after you've moved.</p>
+
+    <h2>Does it work outside Hong Kong?</h2>
+    <p>Yes. Searching from your current location works anywhere Google Maps has restaurant listings, including mainland China (where coverage is thinner). The list of areas to choose from covers Hong Kong only.</p>
+
+    <h2>Where do the ratings and reviews come from?</h2>
+    <p>Places, ratings, reviews and opening hours come from Google Maps. The "Known for" note on a restaurant is written by Google's Gemini AI from what it knows about the place; it can be out of date or wrong, so treat it as a hint.</p>
+
+    <h2>Which map apps can it open?</h2>
+    <p>Apple Maps, Google Maps, Amap (高德地圖) and Baidu Maps (百度地圖), whichever are installed. In mainland China the app gives each map app the coordinate system it expects, so the pin lands in the right place.</p>
+
+    <h2>Can I use it in Chinese?</h2>
+    <p>Yes. Tap the language button at the top to switch between English and Traditional Chinese.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
